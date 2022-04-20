@@ -1,5 +1,5 @@
 # Weather
-Current weather data website created by me :) 
+Current weather data website
 # Used technologies
 - HTML
 - CSS
