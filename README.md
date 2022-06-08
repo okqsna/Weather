@@ -5,4 +5,4 @@ Current weather data website
 - CSS
 - JavaScript
 - OpenWeather API
-- Free IP Geolocation API
+- Ip Find Geolocation API
