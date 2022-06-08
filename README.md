@@ -1,8 +1,8 @@
 # Weather
-Current weather data website
+Current weather data website created with APIs
 # Used technologies
 - HTML
 - CSS
 - JavaScript
-- OpenWeather API
-- Ip Find Geolocation API
+- OpenWeatherMap Current weather data API (https://openweathermap.org/current)
+- IP Find Geolocation API (https://ipfind.com/)
