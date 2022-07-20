@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon link -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
+</head>
+<body>
+    <div class="wrapp">
+        <main>
+            <div class="maincard__wrapp" id="maincard">
+                <div class="top__maincard">
+                    <div class="info__top">
+                        <div class="location__info">
+                            <p id="cityLocationInfo"> </p>
+                            <span id="countryLocation"> </span>
+                        </div>
+                        <div class="temperature__info">
+                            <div class="logo__temperature"></div>
+                            <p class="p__temperature" id="pTemperature"> </p>
+                        </div>
+                    </div>
+                    <div class="img__top"></div>
+                </div>
+                <div class="widgets__maincard">
+                    <div class="widgets__row1">
+                    <div class="widget1__row1">
+                        <div class="top__widget1">
+                            <div class="logo__top"></div>
+                            <p class="txt__top">feels like</p>
+                        </div>
+                        <div class="txt__widget1">
+                            <p class="p1__txt_widget1" id="feelsWidget1">24.33</p>
+                            <p class="p2__txt_widget1">similar to the actual temperature</p>
+                        </div>
+                    </div>
+                    <div class="widget2__row1">
+                        <div class="top__widget1">
+                            <div class="logo__top"></div>
+                            <p class="txt__top">max temperature</p>
+                        </div>
+                        <div class="txt__widget1">
+                            <p class="p1__txt_widget1" id="maxtempWidget2">24.60</p>
+                            <p class="p2__txt_widget1">similar to the actual temperature</p>
+                        </div>
+                    </div>
+                    <div class="widget3__row1">
+                        <div class="top__widget1">
+                            <div class="logo__top"></div>
+                            <p class="txt__top">min temperature</p>
+                        </div>
+                        <div class="txt__widget1">
+                            <p class="p1__txt_widget1" id="mintempWidget3">24.60</p>
+                            <p class="p2__txt_widget1">similar to the actual temperature</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="widgets__row2">
+                        <div class="widget1__row2">
+                            <div class="top__widget1">
+                                <div class="logo__top"></div>
+                                <p class="txt__top">humidity</p>
+                            </div>
+                            <div class="txt__widget1">
+                                <p class="p1__txt_widget1" id="humidityWidget1">47%</p>
+                                <p class="p2__txt_widget1">the amount of water <br>in the air</p>
+                            </div>
+                        </div>
+                        <div class="widget2__row2">
+                            <div class="top__widget1">
+                                <div class="logo__top"></div>
+                                <p class="txt__top">cloudliness</p>
+                            </div>
+                            <div class="txt__widget1">
+                                <p class="p1__txt_widget1" id="cloudsWidget2">47%</p>
+                                <p class="p2__txt_widget1">the horizontal extend <br>of clouds</p>
+                            </div>
+                        </div>
+                        <div class="widget3__row2">
+                            <div class="top__widget1">
+                                <div class="logo__top"></div>
+                                <p class="txt__top">wind <br>speed</p>
+                            </div>
+                            <div class="txt__widget1">
+                                <p class="p1__txt_widget1" id="windWidget3">47%</p>
+                                <p class="p2__txt_widget1">how fast the air
+                                    is moving </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardFind__main" id="cardFind">
+                <div class="logo__cardFind"></div>
+                <div class="input__cardFind">
+                    <input type="text" placeholder="Type your city" id="cityField">
+                    <div class="logo__input_cardFind" id="btnFind"></div>
+                </div>
+            </div>
+        </main>
+        <div class="warnmessage__main" id="warnmessage">
+            <div class="logo__warnmessage"></div>
+            <p class="txt__warnmessage">Please, type <br> your city </p>
+        </div>
+        <div class="location__main" id="locationmessage">
+            <div class="logo__location"></div>
+            <div class="txt__location">
+                <p>Is <span id="cityLocation"></span> your <br>location?</p>
+            <div class="btns__location">
+                <a id="locationYes">Yes</a>
+                <a id="locationNo">No</a>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,527 @@
+$purple:#48319D;
+$white:#ffff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapp{
+    width:100%;
+    display: flex;
+    font-family: 'Poppins';
+    height:100vh;
+    background: radial-gradient(50% 50% at 50% 50%, #45278B 0%, #2E335A 100%);
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .maincard__wrapp{
+            width: 688px;
+            height: 634px;
+            background-color: $purple;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+            border-radius: 40px;
+            padding: 60px 0px 60px 60px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 45px;
+            position: fixed;
+            top:2%;
+            left:-70%;
+            transition: 1s;
+            .top__maincard{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 40px;
+                .info__top{
+                    display: flex;
+                    flex-direction: column;
+                    .location__info{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        p{
+                            font-weight: 600;
+                            font-size: 40px;
+                            line-height: 60px;
+                            color: $white;
+                        }
+                        span{
+                            font-weight: 600;
+                            font-size: 40px;
+                            line-height: 60px;
+                            color: $white;
+                            margin-left: 13px;
+                        }
+                    }
+                    .temperature__info{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .logo__temperature{
+                            background-image: url('img/thermometer.svg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 25px;
+                            height: 29px;
+                        }
+                        .p__temperature{
+                            font-weight: 600;
+                            font-size: 40px;
+                            line-height: 60px;
+                            color: $white;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .img__top{
+                    background-image: url('img/img1.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 168px;
+                    height: 165px;
+                    margin-left: 50px;
+                }
+            }
+            .widgets__maincard{
+                display: flex;
+                flex-direction: column;
+                .widgets__row1{
+                    display: flex;
+                    flex-direction: row;
+                    .widget1__row1{
+                        background: rgba(46, 51, 90, 0.7);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                        border-radius: 20px;
+                        width: 155px;
+                        height: 146px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 16px;
+                        .top__widget1{
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 20px;
+                            .logo__top{
+                                background-image: url('img/feather.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 10px;
+                            }
+                            .txt__top{
+                                color: $white;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+                            
+                        }
+                        .txt__widget1{
+                            display: flex;
+                            flex-direction: column;
+                            .p1__txt_widget1{
+                                font-weight: 600;
+                                font-size: 29px;
+                                line-height: 44px;
+                                letter-spacing: 0.03em;
+                                color: $white;
+                            }
+                            .p2__txt_widget1{
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 13px;
+                                color: $white;
+                            }
+                        }
+                    } 
+                    .widget2__row1{
+                        background: rgba(46, 51, 90, 0.7);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                        border-radius: 20px;
+                        width: 155px;
+                        height: 146px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 16px;
+                        margin: 0px 29px 0px 29px;
+                        .top__widget1{
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 17px;
+                            .logo__top{
+                                background-image: url('img/sun.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 32px;
+                                height: 24px;
+                                margin-right: 10px;
+                            }
+                            .txt__top{
+                                color: $white;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 14px;
+                            }
+                            
+                        }
+                        .txt__widget1{
+                            display: flex;
+                            flex-direction: column;
+                            .p1__txt_widget1{
+                                font-weight: 600;
+                                font-size: 29px;
+                                line-height: 44px;
+                                letter-spacing: 0.03em;
+                                color: $white;
+                            }
+                            .p2__txt_widget1{
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 13px;
+                                color: $white;
+                            }
+                        }
+                    }  
+                    .widget3__row1{
+                        background: rgba(46, 51, 90, 0.7);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                        border-radius: 20px;
+                        width: 155px;
+                        height: 146px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 16px;
+                        .top__widget1{
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 17px;
+                            .logo__top{
+                                background-image: url('img/cloud-lightning.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 32px;
+                                height: 24px;
+                                margin-right: 10px;
+                            }
+                            .txt__top{
+                                color: $white;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 14px;
+                            }
+                            
+                        }
+                        .txt__widget1{
+                            display: flex;
+                            flex-direction: column;
+                            .p1__txt_widget1{
+                                font-weight: 600;
+                                font-size: 29px;
+                                line-height: 44px;
+                                letter-spacing: 0.03em;
+                                color: $white;
+                            }
+                            .p2__txt_widget1{
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 13px;
+                                color: $white;
+                            }
+                        }
+                    }          
+                }
+                .widgets__row2{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 24px;
+                        .widget1__row2{
+                            background: rgba(46, 51, 90, 0.7);
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                            border-radius: 20px;
+                            width: 155px;
+                            height: 146px;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 16px;
+                            .top__widget1{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                margin-bottom: 15px;
+                                .logo__top{
+                                    background-image: url('img/humidity.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    width: 24px;
+                                    height: 28px;
+                                    margin-right: 10px;
+                                }
+                                .txt__top{
+                                    color: $white;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                }
+                                
+                            }
+                            .txt__widget1{
+                                display: flex;
+                                flex-direction: column;
+                                .p1__txt_widget1{
+                                    font-weight: 600;
+                                    font-size: 29px;
+                                    line-height: 44px;
+                                    letter-spacing: 0.03em;
+                                    color: $white;
+                                }
+                                .p2__txt_widget1{
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 13px;
+                                    color: $white;
+                                }
+                            }
+                    
+                    }
+                    .widget2__row2{
+                        background: rgba(46, 51, 90, 0.7);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                        border-radius: 20px;
+                        width: 155px;
+                        height: 146px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 16px;
+                        margin: 0px 29px 0px 29px;
+                        .top__widget1{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin-bottom: 15px;
+                            .logo__top{
+                                background-image: url('img/cloud.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 29px;
+                                height: 28px;
+                                margin-right: 10px;
+                            }
+                            .txt__top{
+                                color: $white;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+                            
+                        }
+                        .txt__widget1{
+                            display: flex;
+                            flex-direction: column;
+                            .p1__txt_widget1{
+                                font-weight: 600;
+                                font-size: 29px;
+                                line-height: 44px;
+                                letter-spacing: 0.03em;
+                                color: $white;
+                            }
+                            .p2__txt_widget1{
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 13px;
+                                color: $white;
+                            }
+                        }
+                
+                }
+                .widget3__row2{
+                      background: rgba(46, 51, 90, 0.7);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                        border-radius: 20px;
+                        width: 155px;
+                        height: 146px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 16px;
+                        .top__widget1{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin-bottom: 17px;
+                            .logo__top{
+                                background-image: url('img/wind.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 32px;
+                                height: 24px;
+                                margin-right: 10px;
+                            }
+                            .txt__top{
+                                color: $white;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 14px;
+                            }
+                            
+                        }
+                        .txt__widget1{
+                            display: flex;
+                            flex-direction: column;
+                            .p1__txt_widget1{
+                                font-weight: 600;
+                                font-size: 29px;
+                                line-height: 44px;
+                                letter-spacing: 0.03em;
+                                color: $white;
+                            }
+                            .p2__txt_widget1{
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 13px;
+                                width: 66px;
+                                height: 28px;
+                                color: $white;
+                            }
+                        }
+                    }     
+                }
+                }
+            }
+            .cardFind__main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                right: 40%;
+                transition: 1s;
+                .logo__cardFind{
+                    background-image: url('img/logo.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 160px;
+                    height: 160px;
+                }
+                .input__cardFind{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 17px 25px;
+                    background: #48319D;
+                    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                    border-radius: 15px;
+                    width: 356px;
+                    height: 49px;
+                    input{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: $white;
+                        font-family: 'Poppins';
+                        &::placeholder{
+                            color: $white;
+                        }
+                    }
+                    .logo__input_cardFind{
+                        background-image: url('img/search.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+            }
+            .warnmessage__main{
+                background: #48319D;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                border-radius: 20px;
+                width: 268px;
+                height: 100px;
+                display:none;
+                flex-direction: row; 
+                align-items: center;
+                padding: 25px;
+                margin-left: 50px;
+                margin-top: -120px;
+              
+                transition: .5s;
+                .logo__warnmessage{
+                    background-image: url('img/pen.svg');
+                    background-size: cover;
+                    width: 65px;
+                    height: 65px;
+                }
+                .txt__warnmessage{
+                    margin-left: 15px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: $white;
+                }
+            }
+            .location__main{
+                background: #48319D;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25);
+                border-radius: 20px;
+                width: 268px;
+                height: 112px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px;
+                transition: 0.5s;
+                margin-top: -120px;
+                margin-left: 50px;
+                .logo__location{
+                    background-image: url('img/location.svg');
+                    background-size: cover;
+                    width: 63px;
+                    height: 63px;
+                    margin-right: 15px;
+                }
+                .txt__location{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: $white;
+                        span{
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: $white; 
+                        }
+                    }
+                    .btns__location{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 10px;
+                        a{
+                            margin-right: 40px;
+                            color: $white;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    
+
+
