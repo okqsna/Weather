@@ -1,5 +1,5 @@
-# Weather
-Current weather data website created with APIs
+## Weather
+Current weather data website created with OpenWeather API and IP Find Geolocation API.
 # Used technologies
 - HTML
 - SASS compiled to CSS
